@@ -4,7 +4,7 @@ MAINTAINER Fabio Rapposelli <fabio@rapposelli.org>
 #We need to install bash to easily handle arrays
 # in the entrypoint.sh script
 RUN apk add --update nginx bash \
-  python python-dev py-pip \
+  python python-dev py2-pip \
   gcc musl-dev linux-headers \
   augeas-dev openssl openssl-dev libffi-dev ca-certificates dialog \
   && rm -rf /var/cache/apk/*
